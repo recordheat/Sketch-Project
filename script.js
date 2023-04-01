@@ -1,11 +1,11 @@
+
 // Sketch functions to select / call
 function sketch () {
-let user = 0;
 const container = document.querySelector('.container');
-
-// Creating a grid div inside of my container 
-function grid () {
 const gridBox = document.createElement('div');
+const clearBtn = document.querySelector('#clear');
+const rainbowMode = document.querySelector('#random-colors');
+
 gridBox.setAttribute('id','gridBox');
 container.appendChild(gridBox);
 
@@ -24,12 +24,26 @@ square.addEventListener('mouseover', function() {
     square.style.backgroundColor = 'black';
     });
 
-// Button listener event that clears/resets the gridbox
+const squares = document.querySelectorAll('.square');
 
-            }
-        }
-    }
-grid();
+// Button listener event that clears/resets the gridbox
+clearBtn.addEventListener('click', function () {
+squares.forEach(square => square.style.backgroundColor = 'lightsalmon');
+});
+// Selects a button to select different colors to cover the grid
+rainbowMode.addEventListener('click', function () {
+squares.forEach(function(square) {
+    square.addEventListener('mouseover', function() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    square.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    });
+});
+});
+
+         }
+     }
 }
 // Call the sketch function
 sketch ();
