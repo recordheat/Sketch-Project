@@ -1,6 +1,6 @@
 body {
     font-family: 'SF Pixelate', sans-serif;
-    background-color: lightsalmon;
+    background-color: #92b7f7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,8 +20,18 @@ h1 {
 }
 
 button {
+    font-family: 'SF Pixelate', sans-serif;
     cursor: pointer;
+    font-weight: bold;
+    background-color: lightslategray;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
 }
+
 
 .container {
     height: 750px;
@@ -36,17 +46,19 @@ button {
     position: absolute;
     left: 0;
     margin-left: 150px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 20px;
-    border-color: black;
+    background-color: gainsboro;
+    box-shadow: 0 0 5px black;
 }
+
 
 #gridBox {
     height: 670px;
     width: 700px;
     border: 2px solid black;
-    border-bottom: 2px solid black;
+    background-color: white;
 }
 
 .row {
@@ -66,6 +78,7 @@ button {
 
 .footer {
     width: 100%;
+    font-weight: bold;
     font-size: 24px;
     display: flex;
     justify-content: flex-start;
