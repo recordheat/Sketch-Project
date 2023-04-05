@@ -4,3 +4,5 @@ foundations from the course. Googling things and using ChatGPT as a teacher to h
 from their course.
 
 - To be able to sketch anything on this website, hover over the gridbox and draw whatever you would like.
+
+Link to webpage - https://recordheat.github.io/Sketch-Project/
